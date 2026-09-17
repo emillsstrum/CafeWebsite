@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bistro Cafe | Contact Us</title>
+  <link href="cafe.css" rel="stylesheet">
+  <style>
+    form {
+      padding: 10px;
+      width: 500px;
+      margin-bottom: 1em;
+    }
+    fieldset {
+      width: 350px;
+    }
+    input[type=submit], input[type=reset] {
+      background-color: #AE5137;
+      color: #ffffff;
+      padding: 4px;
+      width: 150px;
+      border: 1px solid #AE5137;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+    input[type=text], [type=tel], [type="email"] {
+      border: 1px solid #5C434D;
+      border-radius: 5px;
+    }
+    textarea {
+      border: 1px solid #5C434D;
+      border-radius: 5px;
+    }
+    input[type=text]:focus, [type=tel]:focus, [type="email"]:focus {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <!-- Emma Mills Strum
+    final_project_contact.html
+    INFO1311.WW
+    Olberding
+    2/12/25
+  -->
+  <div id="wrapper">
+    <header><h1>The Bistro Cafe</h1></header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="final_project_history.html">History</a></li>
+        <li><a href="final_project_specials.html">Specials</a></li>
+        <li><a href="final_project_contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Contact Us</h2>
+      <p>Required fields are marked with an asterisk *</p>
+      <form method="post" action="https://www.mccinfo.net/webresources/cgi-bin/formmail.asp">
+        <input name="recipient" type="hidden" value="lolberding@mccneb.edu">
+        <input type="hidden" name="subject" value="INFO1311 Final Project Emma Mills Strum">
+        <input name="redirect" type="hidden" value="http://student.mccinfo.net/~elmillsstrum/project/final_project_return.html">
+        <label>*First Name: <input type="text" name="fname" id="fname" required></label>
+        <br><br>
+        <label>*Last Name: <input type="text" name="lname" id="lname" required></label>
+        <br><br>
+        <label>*Email: <input type="email" name="email" id="email" placeholder="example@example.com" required>
+        </label>
+        <br><br>
+        <label>*Phone Number: <input type="tel" name="phone" id="phone" required></label>
+        <br><br>
+        <fieldset>
+          <legend>*Select your communication preference: </legend>
+          <input type="radio" name="comm_pref" id="pref_email" value="pref_email" required>
+          <label for="pref_email">Email</label><br>
+          <input type="radio" name="comm_pref" id="pref_phone" value="pref_phone">
+          <label for="pref_phone">Phone</label>
+        </fieldset>
+        <br><br>
+        <label for="message">*Your Message: </label>
+        <br>
+        <textarea cols="50" rows="8" name="message" id="message" placeholder="Type your message here" required></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear Form">
+      </form>
+    </main>
+    <footer>
+      <p>
+        <a href="index.html">Home</a> &nbsp;&nbsp;
+        <a href="final_project_history.html">History</a> &nbsp;&nbsp;
+        <a href="final_project_specials.html">Specials</a> &nbsp;&nbsp;
+        <a href="final_project_contact.html">Contact Us</a> &nbsp;&nbsp;
+      </p>
+      <p>
+        Copyright &copy; 2025 <a href="mailto:elmillsstrum@mail.mccneb.edu" target="_blank">elmillsstrum@mail.mccneb.edu</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

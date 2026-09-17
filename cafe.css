@@ -1,0 +1,139 @@
+/*   Emma Mills Strum
+     cafe.css
+     INFO1311.WW
+     Olberding
+     2/12/25
+*/
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #5c434d;
+}
+#wrapper {
+  width: 100%;
+  background-color: #ffffff;
+}
+nav {
+  text-align: center;
+  padding-left: 0;
+  background-color: #FFECD8;
+}
+nav a {
+  text-decoration: none;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+	flex-direction: column;
+  padding-left: 0;
+  margin-top: 0;
+  font-weight: bold;
+}
+nav li{  
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border-bottom: 1px solid #5C434D;  
+}
+nav a:link {
+ color: #AE5137;
+}
+nav a:visited {
+  color: #AE5137;
+}
+nav a:hover {
+  color: #FAC664;
+}
+h1 {
+  padding-left: 80px;
+  padding-top: 20px;
+  font-size: 2em;
+  color: #402F35;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  color: #5C434D;
+}
+header {
+  background-image: url(cafe_logo1.png);
+  background-repeat: no-repeat;
+  height: 75px;
+  border-bottom: 1px solid #5C434D;
+  background-color: #FFECD8;
+}
+header a { 
+  text-decoration: none; 
+}
+header a:link, a:visited, a:hover {
+  color: #402F35;
+}
+main {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: .5em;
+  overflow: auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+#image_history {
+  float: left;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+footer {
+  font-size: small;
+  background-color: #FFECD8;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border-top: 1px solid #402F35;
+  padding-left: 2em;
+}
+
+@media (min-width: 800px) {
+  #wrapper {
+    width: 80%; 
+    margin: auto;
+  }
+  h1 {
+    padding-left: 130px;
+    padding-top: 40px;
+    font-size: 3em;
+  }
+  header {
+    background-image: url(cafe_logo2.png);
+    background-repeat: no-repeat;
+    height: 125px;
+    border-bottom: 1.5px solid #402F35;
+  }
+  nav {
+    background-color: #FFECD8;
+    border-bottom: 1.5px solid #402F35;
+  }
+  nav ul { 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    justify-content: space-around;
+    font-size: 1.2em;
+  }
+  nav li { 
+    border-bottom: none; 
+    padding-top: 1em;
+    padding-bottom: 0;
+  }
+  main {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  footer {
+    text-align: left;
+    border-top: 1.5px solid #402F35;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  #image_home {
+    float: right;
+    padding-left: 1em;
+    padding-bottom: 1em;
+  }
+}
